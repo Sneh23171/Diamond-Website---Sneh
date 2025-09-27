@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Diamond Jewelry Customizer</title>
+    <link rel="stylesheet" href="asset/style.css">
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbaar -->
+
+    <div class="dj-navbar">
+        <div class="dj-navbar-container">
+            <button class="dj-menu-toggle" aria-label="Toggle menu">
+                <img src="asset/images/diamond-luxury-stone-isolated-icon-free-vector.jpg" alt="Menu Icon"
+                    class="dj-diamond-icon" />
+            </button>
+
+            <div class="dj-logo-container">
+                <a href="index.html" class="dj-logo">
+                    <span class="dj-logo-text">DIAMOND</span>
+                    <span class="dj-logo-accent">✦</span>
+                    <span class="dj-logo-text">JEWELRY</span>
+                </a>
+            </div>
+
+            <div class="dj-navbar-icons">
+                <div class="dj-account-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+
+                <div class="dj-search-container">
+                    <button class="dj-search-toggle" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <div class="dj-search-input-container">
+                        <input type="text" class="dj-search-input" placeholder="Search..." />
+                        <button class="dj-close-search" aria-label="Close search">✕</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dj-side-menu">
+            <div class="dj-menu-header">
+                <h1>Diamond</h1>
+                <button class="dj-close-menu" aria-label="Close menu">✕</button>
+            </div>
+            <nav class="dj-menu-nav">
+                <ul>
+                    <li><a href="In -Bookappoinment.html" class="dj-menu-item">BOOK AN APPOINTMENT</a></li>
+                    <li><a href="Book An Appointment.html" class="dj-menu-item">BESPOKE</a></li>
+
+                    <li><a href="Lookup - Page.html" class="dj-menu-item">LOOKBOOK</a></li>
+                    <li><a href="Inquery Page.html" class="dj-menu-item">inquiry Page</a></li>
+                    <li><a href="#" class="dj-menu-item">LOGIN</a></li>
+                </ul>
+            </nav>
+            <div class="dj-menu-footer">
+                <a href="https://www.instagram.com" target="_blank" class="dj-instagram-icon" aria-label="Instagram">
+                    <img src="asset/images/instagram.png" alt="" />
+                </a>
+            </div>
+        </div>
+
+        <div class="dj-menu-overlay"></div>
+    </div><!-- Inside <script> -->
+
+
+
+    <div class="jewelry-showcase">
+        <!-- Left Side - Thumbnail Gallery -->
+        <div class="thumbnail-gallery">
+            <img src="asset/images/CurveDiamondHuggiesSQ_5000x.jpg" alt="Selected Jewelry" class="thumbnail active"
+                id="mainThumbnail">
+            <img src="asset/images/istockphoto-1276880504-612x612.jpg" alt="Diamond Ring 2" class="thumbnail">
+            <img src="asset/images/istockphoto-1276880504-612x612.jpg" alt="Diamond Pendant 1" class="thumbnail">
+            <img src="asset/images/istockphoto-1276880504-612x612.jpg" alt="Diamond Pendant 2" class="thumbnail">
+            <img src="asset/images/istockphoto-1276880504-612x612.jpg" alt="Diamond Chain 1" class="thumbnail">
+            <img src="asset/images/istockphoto-1276880504-612x612.jpg" alt="Diamond Ring 3" class="thumbnail">
+        </div>
+
+        <div class="image-section">
+            <div class="main-image-container" id="mainImageContainer">
+                <img src="asset/images/CurveDiamondHuggiesSQ_5000x.jpg" alt="Custom Diamond Jewelry" class="main-image"
+                    id="mainImage">
+                <div class="zoom-icon" id="zoomIcon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        <line x1="11" y1="8" x2="11" y2="14"></line>
+                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                    </svg>
+                </div>
+                <div class="lens" id="lens"></div>
+            </div>
+            <div class="zoom-result" id="zoomResult"></div>
+        </div>
+
+        <!-- Right Side - Inquiry Form -->
+        <div class="inquiry-section">
+            <h2 class="form-title">Custom Jewelry Inquiry</h2>
+            <div class="price">$0.00</div>
+
+            <div class="form-group">
+                <label for="jewelry-type">Jewelry Type</label>
+                <select id="jewelry-type">
+                    <option value="">Select an option</option>
+                    <option value="ring">Engagement Ring</option>
+                    <option value="pendant">Pendant</option>
+                    <option value="chain">Necklace</option>
+                    <option value="bracelet">Bracelet</option>
+                    <option value="earrings">Earrings</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Budget Range</label>
+                <div class="option-group">
+                    <div class="option-btn">$3,500–$5,000</div>
+                    <div class="option-btn active">$5,000–$10,000</div>
+                    <div class="option-btn">$10,000+</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Diamond Quality</label>
+                <div class="diamond-options">
+                    <div class="image-container">
+                        <img src="asset/images/DiamondRing_5000x.jpg" alt="Lab Diamond">
+                        <div class="image-caption">Lab VS+</div>
+                    </div>
+                    <div class="diamond-option">
+                        <div class="image-container">
+                            <img src="asset/images/DiamondRing_5000x.jpg" alt="Lab Diamond">
+                            <div class="image-caption">Lab VS+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Metal Type</label>
+                <div class="option-group">
+                    <div class="option-btn">White Gold</div>
+                    <div class="option-btn active">Yellow Gold</div>
+                    <div class="option-btn">Rose Gold</div>
+                    <div class="option-btn">Platinum</div>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label>Weight Preference</label>
+                <div class="option-group">
+                    <div class="option-btn">Light</div>
+                    <div class="option-btn active">Medium</div>
+                    <div class="option-btn">Heavy</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Special Requests</label>
+                <textarea id="notes" rows="4" placeholder="Tell us about your custom design..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <h2 class="form-title" style="margin-bottom: 30px;">Personal Details</h2>
+                <label for="notes">Name</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+
+                <label for="notes">Email</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Best Time To Call (EST): </label>
+                <div class="option-group">
+                    <div class="option-btn">11AM-1PM
+                    </div>
+                    <div class="option-btn active">1PM-3PM</div>
+                    <div class="option-btn">3PM-5PM</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+
+                <label for="notes">Social Media Handle:</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+
+                <label for="notes">Upload an image of what you're looking for (Optional):</label>
+                <div class="file-upload-container">
+                    <input type="file" id="file-upload" class="file-input" />
+                    <button id="file" class="upload">Choose File</button>
+                </div>
+            </div>
+
+            <div class="form-footer">
+                <button class="next-btn">Continue to Personal Details</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Description -->
+
+    <section class="dt-body">
+        <div class="dt-tabs-container">
+            <div class="dt-tabs-row">
+                <div class="dt-tab-btn dt-active" data-tab="product">Product description</div>
+                <div class="dt-tab-btn" data-tab="shipping">Shipping Policy</div>
+                <div class="dt-tab-btn" data-tab="return">Return Policy</div>
+            </div>
+
+            <div class="dt-content-container" id="dt-content-container">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget">
+        <svg class="chat" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>ABOUT OUR STORE</h3>
+                <p>Our mission is to help success-driven individuals bookmark chapters of achievement whilst expressing
+                    themselves through custom jewelry</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>MAIN MENU</h3>
+                <ul class="footer-links">
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Jewelry care</a></li>
+                    <li><a href="Private Policy.html">Private Policy</a></li>
+                    <li><a href="TAC.html">Terms</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="footer-section">
+                <h3>STAY UP TO DATE WITH OUR DROPS</h3>
+                <p>Be the first to know! Sign up for exclusive access to our limited-edition drops. Don't miss your
+                    chance to secure one-of-a-kind pieces before anyone else!</p>
+                <div class="email-signup">
+                    <input type="email" style="padding-left: 20px;" placeholder="Enter your email">
+                    <button class="ftb" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        © Designed and developed by Sneh Gohil
+    </div>
+    <script>
+        // Thumbnail click functionality
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const mainImage = document.getElementById('mainImage');
+
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', function () {
+                // Remove active class from all thumbnails
+                thumbnails.forEach(t => t.classList.remove('active'));
+                // Add active class to clicked thumbnail
+                this.classList.add('active');
+                // Update main image
+                mainImage.src = this.src;
+            });
+        });
+
+        // Zoom functionality
+        const container = document.getElementById("mainImageContainer");
+        const image = document.getElementById("mainImage");
+        const lens = document.getElementById("lens");
+        const result = document.getElementById("zoomResult");
+        const zoomIcon = document.getElementById("zoomIcon");
+
+        const zoomLevel = 2; // 2x zoom
+
+        container.addEventListener("mousemove", moveLens);
+        container.addEventListener("mouseenter", () => {
+            lens.style.display = "block";
+            result.style.display = "block";
+        });
+        container.addEventListener("mouseleave", () => {
+            lens.style.display = "none";
+            result.style.display = "none";
+        });
+
+        function moveLens(e) {
+            const bounds = container.getBoundingClientRect();
+            const x = e.clientX - bounds.left;
+            const y = e.clientY - bounds.top;
+
+            const lensWidth = lens.offsetWidth;
+            const lensHeight = lens.offsetHeight;
+
+            let lensX = x - lensWidth / 2;
+            let lensY = y - lensHeight / 2;
+
+            // Boundary check
+            if (lensX < 0) lensX = 0;
+            if (lensY < 0) lensY = 0;
+            if (lensX > container.offsetWidth - lensWidth) lensX = container.offsetWidth - lensWidth;
+            if (lensY > container.offsetHeight - lensHeight) lensY = container.offsetHeight - lensHeight;
+
+            lens.style.left = `${lensX}px`;
+            lens.style.top = `${lensY}px`;
+
+            // Show zoomed image in result
+            result.style.backgroundImage = `url(${image.src})`;
+            result.style.backgroundPosition = `-${lensX * zoomLevel}px -${lensY * zoomLevel}px`;
+            result.style.backgroundSize = `${image.width * zoomLevel}px ${image.height * zoomLevel}px`;
+        }
+
+        zoomIcon.addEventListener('click', function (e) {
+            e.stopPropagation();
+            window.open(mainImage.src, '_blank');
+        });
+
+        // Option button functionality
+        const optionBtns = document.querySelectorAll('.option-btn');
+        optionBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                const parent = this.parentElement;
+                if (parent.classList.contains('option-group')) {
+                    parent.querySelectorAll('.option-btn').forEach(b => b.classList.remove('active'));
+                }
+                this.classList.add('active');
+                updatePrice();
+            });
+        });
+
+        // Diamond option functionality
+        const diamondOptions = document.querySelectorAll('.diamond-option');
+        diamondOptions.forEach(option => {
+            option.addEventListener('click', function () {
+                diamondOptions.forEach(o => o.classList.remove('active'));
+                this.classList.add('active');
+                updatePrice();
+            });
+        });
+
+        // Price calculation (simplified)
+        function updatePrice() {
+            const activeBudget = document.querySelector('.option-btn.active');
+            const activeDiamond = document.querySelector('.diamond-option.active').textContent.trim();
+
+            let basePrice = 0;
+            if (activeBudget.textContent.includes('$3,500')) basePrice = 4250;
+            else if (activeBudget.textContent.includes('$5,000')) basePrice = 7500;
+            else basePrice = 12500;
+
+            if (activeDiamond.includes('Natural')) basePrice *= 1.5;
+
+            document.querySelector('.price').textContent = '$' + basePrice.toLocaleString('en-US') + '.00';
+        }
+
+        // Initialize price
+        updatePrice();
+
+        // Extract image from URL and display it
+        const urlParams = new URLSearchParams(window.location.search);
+        const imgSrc = urlParams.get('img');
+
+        if (imgSrc) {
+            const decodedImg = decodeURIComponent(imgSrc);
+
+            // Update main image
+            const mainImg = document.getElementById('mainImage');
+            if (mainImg) mainImg.src = decodedImg;
+
+            // Update first thumbnail
+            const firstThumb = document.querySelector('.thumbnail-gallery img:first-child');
+            if (firstThumb) firstThumb.src = decodedImg;
+        }
+    </script>
+
+    <script>
+        // Content templates
+        const dtContentTemplates = {
+            product: `
+                    <div class="dt-tab-content" id="product-content">
+                        <h2 class="dt-h2">Product description</h2>
+                        <p class="dt-p">We stay true to our word, the diamonds you pay for are the diamonds we will provide! Ask about our jewelry appraisal offers!<br>
+                        A member of our team will reach out to you within 2-3 business days of you submitting your inquiry</p>
+                        
+                        <h3 class="dt-h3">The Four Step Process</h3>
+                        
+                        <div class="dt-step">
+                            <strong>Step 1</strong>: 3D computer-aided design done! Includes a 360 view of your piece, as well as dimensions
+                        </div>
+                        
+                        <div class="dt-step">
+                            <strong>Step 2</strong>: Confirm your design, and we will start the production, wax printing, and molding
+                        </div>
+                        
+                        <div class="dt-step">
+                            <strong>Step 3</strong>: We handle production, and finish with a strict quality control inspection!
+                        </div>
+                        
+                        <div class="dt-step">
+                            <strong>Step 4</strong>: Enjoy your custom piece from Diamond Touch Toronto #TheDiamondTouch
+                        </div>
+                    </div>
+                `,
+            shipping: `
+                    <div class="dt-tab-content" id="shipping-content">
+                        <h2 class="dt-h2">Shipping Policy</h2>
+                        <p class="dt-p">We stay true to our word, the diamonds you pay for are the diamonds we will provide! Ask about our jewelry appraisal offers!</p>
+                        <p class="dt-p">A member of our team will reach out to you within 2-3 business days of you submitting your inquiry.</p>
+                    </div>
+                `,
+            return: `
+                    <div class="dt-tab-content" id="return-content">
+                        <h2 class="dt-h2">Return Policy</h2>
+                        <p class="dt-p">Due to the custom nature of our products, we generally do not accept returns. However, we stand behind the quality of our workmanship.</p>
+                        <p class="dt-p">If there are any issues with your order, please contact us within 7 days of receipt and we will work with you to resolve the matter.</p>
+                        <p class="dt-p">All returns require prior authorization. Shipping costs for returns are the responsibility of the customer unless the return is due to our error.</p>
+                    </div>
+                `
+        };
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const dtTabs = document.querySelectorAll('.dt-tab-btn');
+            const dtContentContainer = document.getElementById('dt-content-container');
+
+            // Load initial content
+            dtContentContainer.innerHTML = dtContentTemplates.product;
+
+            dtTabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    // Only proceed if this tab isn't already active
+                    if (this.classList.contains('dt-active')) return;
+
+                    // Remove active class from all tabs
+                    dtTabs.forEach(t => t.classList.remove('dt-active'));
+
+                    // Add active class to clicked tab
+                    this.classList.add('dt-active');
+
+                    // Get the tab ID and load corresponding content
+                    const tabId = this.getAttribute('data-tab');
+                    dtContentContainer.innerHTML = dtContentTemplates[tabId];
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.dj-menu-toggle');
+            const diamondIcon = document.querySelector('.dj-diamond-icon');
+            const sideMenu = document.querySelector('.dj-side-menu');
+            const menuOverlay = document.querySelector('.dj-menu-overlay');
+            const closeMenu = document.querySelector('.dj-close-menu');
+            const searchToggle = document.querySelector('.dj-search-toggle');
+            const searchInputContainer = document.querySelector('.dj-search-input-container');
+            const closeSearch = document.querySelector('.dj-close-search');
+            const menuItems = document.querySelectorAll('.dj-menu-item');
+            const navbarIcons = document.querySelector('.dj-navbar-icons'); // ✅ new
+
+            const toggleMenu = () => {
+                menuToggle.classList.toggle('active');
+                sideMenu.classList.toggle('open');
+                menuOverlay.classList.toggle('open');
+                diamondIcon.style.display = menuToggle.classList.contains('active') ? 'none' : 'block';
+
+                if (menuToggle.classList.contains('active')) {
+                    menuItems.forEach((item, index) => {
+                        item.style.setProperty('--delay', `${index * 0.5}s`);
+                    });
+                    navbarIcons.classList.add('disable-interaction'); // ✅ disable icons
+                } else {
+                    navbarIcons.classList.remove('disable-interaction'); // ✅ enable icons
+                }
+            };
+
+            const closeAllMenus = () => {
+                menuToggle.classList.remove('active');
+                sideMenu.classList.remove('open');
+                menuOverlay.classList.remove('open');
+                navbarIcons.classList.remove('disable-interaction'); // ✅ enable icons
+                setTimeout(() => {
+                    diamondIcon.style.display = 'block';
+                }, 200);
+            };
+
+            const toggleSearch = () => {
+                searchInputContainer.classList.toggle('active');
+            };
+
+            menuToggle.addEventListener('click', toggleMenu);
+            closeMenu.addEventListener('click', closeAllMenus);
+            menuOverlay.addEventListener('click', closeAllMenus);
+            searchToggle.addEventListener('click', toggleSearch);
+            closeSearch.addEventListener('click', toggleSearch);
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && sideMenu.classList.contains('open')) {
+                    closeAllMenus();
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

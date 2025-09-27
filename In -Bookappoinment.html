@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Jewelry Consultations</title>
+    <link rel="stylesheet" href="asset/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbaar -->
+
+    <div class="dj-navbar">
+        <div class="dj-navbar-container">
+            <button class="dj-menu-toggle" aria-label="Toggle menu">
+                <img src="asset/images/diamond-luxury-stone-isolated-icon-free-vector.jpg" alt="Menu Icon"
+                    class="dj-diamond-icon" />
+            </button>
+
+            <div class="dj-logo-container">
+                <a href="index.html" class="dj-logo">
+                    <span class="dj-logo-text">DIAMOND</span>
+                    <span class="dj-logo-accent">✦</span>
+                    <span class="dj-logo-text">JEWELRY</span>
+                </a>
+            </div>
+
+            <!-- ✅ Wrapped both icons in one container -->
+            <div class="dj-navbar-icons">
+                <div class="dj-account-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+
+                <div class="dj-search-container">
+                    <button class="dj-search-toggle" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <div class="dj-search-input-container">
+                        <input type="text" class="dj-search-input" placeholder="Search..." />
+                        <button class="dj-close-search" aria-label="Close search">✕</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dj-side-menu">
+            <div class="dj-menu-header">
+                <h1>Diamond</h1>
+                <button class="dj-close-menu" aria-label="Close menu">✕</button>
+            </div>
+            <nav class="dj-menu-nav">
+                <ul>
+                    <li><a href="In -Bookappoinment.html" class="dj-menu-item">BOOK AN APPOINTMENT</a></li>
+                    <li><a href="Book An Appointment.html" class="dj-menu-item">BESPOKE</a></li>
+
+                    <li><a href="Lookup - Page.html" class="dj-menu-item">LOOKBOOK</a></li>
+                    <li><a href="Inquery Page.html" class="dj-menu-item">inquiry Page</a></li>
+                    <li><a href="#" class="dj-menu-item">LOGIN</a></li>
+                </ul>
+
+            </nav>
+            <div class="dj-menu-footer">
+                <a href="https://www.instagram.com" target="_blank" class="dj-instagram-icon" aria-label="Instagram">
+                    <img src="asset/images/instagram.png" alt="" />
+                </a>
+            </div>
+        </div>
+
+        <div class="dj-menu-overlay"></div>
+    </div><!-- Inside <script> -->
+
+
+    <div class="calender-con">
+        <div class="appointment-header">
+            <h1 class="appointment-title">Luxury Jewelry Consultation</h1>
+            <span class="appointment-duration">1 hour</span>
+            <p class="appointment-description">
+                Our bespoke consultations offer a personalized one-on-one experience for engagement rings, bands, fine
+                jewelry and special occasion gifting tailored exclusively for you. We are happy to reset heirloom
+                pieces,
+                use alternative stones and create custom designs.
+            </p>
+        </div>
+
+        <div class="scheduler-container">
+            <div class="calendar-section">
+                <div class="calendar-header">
+                    <button class="month-nav" id="prev-month"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path fill="#111"
+                                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                        </svg></button>
+                    <span class="current-month" id="current-month">June 2025</span>
+                    <button class="month-nav" id="next-month"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path fill="#111"
+                                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                        </svg></button>
+                </div>
+
+                <div class="weekdays">
+                    <span>M</span>
+                    <span>T</span>
+                    <span>W</span>
+                    <span>T</span>
+                    <span>F</span>
+                    <span>S</span>
+                    <span>S</span>
+                </div>
+
+                <div class="days-grid" id="days-grid">
+                    <!-- Days will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="times-section">
+                <span class="timezone-label">PACIFIC TIME (GMT-07:00)</span>
+                <h3 class="times-header" id="selected-date">Tuesday, June 17</h3>
+
+                <div class="time-slots" id="time-slots">
+                    <span class="time-slot">9:30 AM</span>
+                    <span class="time-slot">10:00 AM</span>
+                    <span class="time-slot">10:30 AM</span>
+                    <span class="time-slot">11:00 AM</span>
+                    <span class="time-slot">11:30 AM</span>
+                    <span class="time-slot">12:00 PM</span>
+                    <span class="time-slot">12:30 PM</span>
+                    <span class="time-slot">1:00 PM</span>
+                    <span class="time-slot">1:30 PM</span>
+                    <span class="time-slot">2:00 PM</span>
+                    <span class="time-slot">2:30 PM</span>
+                    <span class="time-slot">3:00 PM</span>
+                    <span class="time-slot">3:30 PM</span>
+                </div>
+
+                <span class="show-all">SHOW ALL</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-container2">
+        <div class="image-half2">
+            <img src="asset/images/DiamondRing_5000x.jpg" alt="Second Image">
+        </div>
+        <div class="image-half2" style="align-content: center;">
+            <div class="content-container">
+                <h1>Visit our Zurich <br> Showroom</h1>
+                <p>Schedule an appointment with us and come by our <br>showroom in Zurich. We can't wait to see you!</p>
+                <p>Open Thursday 12-6 pm & Saturday 12-5 pm <br>
+                    Xania, Pelikanplatz 15, 8001 Zürich</p>
+                <p>Phone: 044 515 22 50</p>
+                <p>Email: <span style="border-bottom: 2px solid #555;">sales@loevjewelry.com</span></p><button
+                    class="action-btn"><span>Contact us on
+                        Instagram</span></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>ABOUT OUR STORE</h3>
+                <p>Our mission is to help success-driven individuals bookmark chapters of achievement whilst expressing
+                    themselves through custom jewelry</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>MAIN MENU</h3>
+                <ul class="footer-links">
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Jewelry care</a></li>
+                    <li><a href="Private Policy.html">Private Policy</a></li>
+                    <li><a href="TAC.html">Terms</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="footer-section">
+                <h3>STAY UP TO DATE WITH OUR DROPS</h3>
+                <p>Be the first to know! Sign up for exclusive access to our limited-edition drops. Don't miss your
+                    chance to secure one-of-a-kind pieces before anyone else!</p>
+                <div class="email-signup">
+                    <input type="email" style="padding-left: 20px;" placeholder="Enter your email">
+                    <button class="ftb" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © Designed and developed by Sneh Gohil
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Current date and selected date
+            const currentDate = new Date();
+            let selectedDate = new Date(2025, 5, 17); // June 17, 2025 (month is 0-indexed)
+            let currentMonth = selectedDate.getMonth();
+            let currentYear = selectedDate.getFullYear();
+
+            // DOM elements
+            const daysGrid = document.getElementById('days-grid');
+            const currentMonthElement = document.getElementById('current-month');
+            const selectedDateElement = document.getElementById('selected-date');
+            const prevMonthBtn = document.getElementById('prev-month');
+            const nextMonthBtn = document.getElementById('next-month');
+            const timeSlots = document.querySelectorAll('.time-slot');
+
+            // Initialize calendar
+            renderCalendar(currentMonth, currentYear);
+
+            // Event listeners for month navigation
+            prevMonthBtn.addEventListener('click', function () {
+                currentMonth--;
+                if (currentMonth < 0) {
+                    currentMonth = 11;
+                    currentYear--;
+                }
+                renderCalendar(currentMonth, currentYear);
+            });
+
+            nextMonthBtn.addEventListener('click', function () {
+                currentMonth++;
+                if (currentMonth > 11) {
+                    currentMonth = 0;
+                    currentYear++;
+                }
+                renderCalendar(currentMonth, currentYear);
+            });
+
+            // Time slot selection
+            timeSlots.forEach(slot => {
+                slot.addEventListener('click', function () {
+                    document.querySelector('.time-slot.selected')?.classList.remove('selected');
+                    this.classList.add('selected');
+                });
+            });
+
+            // Function to render the calendar
+            function renderCalendar(month, year) {
+                // Update month/year display
+                const monthNames = ["January", "February", "March", "April", "May", "June",
+                    "July", "August", "September", "October", "November", "December"];
+                currentMonthElement.textContent = `${monthNames[month]} ${year}`;
+
+                // Get first day of month and total days in month
+                const firstDay = new Date(year, month, 1).getDay();
+                const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+                // Get days from previous month
+                const prevMonthDays = new Date(year, month, 0).getDate();
+
+                // Clear the grid
+                daysGrid.innerHTML = '';
+
+                // Add days from previous month
+                for (let i = firstDay === 0 ? 6 : firstDay - 1; i > 0; i--) {
+                    const dayElement = document.createElement('span');
+                    dayElement.className = 'day inactive';
+                    dayElement.textContent = prevMonthDays - i + 1;
+                    daysGrid.appendChild(dayElement);
+                }
+
+                // Add days from current month
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+
+                for (let i = 1; i <= daysInMonth; i++) {
+                    const dayElement = document.createElement('span');
+                    dayElement.className = 'day';
+                    dayElement.textContent = i;
+
+                    const date = new Date(year, month, i);
+
+                    // Mark past dates
+                    if (date < today) {
+                        dayElement.classList.add('past');
+                    }
+
+                    // Mark selected date
+                    if (date.getTime() === selectedDate.getTime()) {
+                        dayElement.classList.add('selected');
+                        updateSelectedDateDisplay(date);
+                    }
+
+                    dayElement.addEventListener('click', function () {
+                        // Only allow selection if not a past date
+                        if (!date < today) {
+                            document.querySelector('.day.selected')?.classList.remove('selected');
+                            this.classList.add('selected');
+                            selectedDate = date;
+                            updateSelectedDateDisplay(date);
+                        }
+                    });
+
+                    daysGrid.appendChild(dayElement);
+                }
+
+                // Add days from next month
+                const totalCells = firstDay + daysInMonth;
+                const remainingCells = totalCells <= 35 ? 35 - totalCells : 42 - totalCells;
+
+                for (let i = 1; i <= remainingCells; i++) {
+                    const dayElement = document.createElement('span');
+                    dayElement.className = 'day inactive';
+                    dayElement.textContent = i;
+                    daysGrid.appendChild(dayElement);
+                }
+
+                // Disable previous month button if we're at current month
+                const currentMonthDate = new Date();
+                currentMonthDate.setHours(0, 0, 0, 0);
+                currentMonthDate.setDate(1);
+
+                const displayedMonthDate = new Date(year, month, 1);
+
+                prevMonthBtn.classList.toggle('disabled', displayedMonthDate <= currentMonthDate);
+            }
+
+            // Function to update the selected date display
+            function updateSelectedDateDisplay(date) {
+                const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                const monthNames = ["January", "February", "March", "April", "May", "June",
+                    "July", "August", "September", "October", "November", "December"];
+
+                const dayName = dayNames[date.getDay()];
+                const monthName = monthNames[date.getMonth()];
+                const dayNumber = date.getDate();
+
+                selectedDateElement.textContent = `${dayName}, ${monthName} ${dayNumber}`;
+            }
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.dj-menu-toggle');
+            const diamondIcon = document.querySelector('.dj-diamond-icon');
+            const sideMenu = document.querySelector('.dj-side-menu');
+            const menuOverlay = document.querySelector('.dj-menu-overlay');
+            const closeMenu = document.querySelector('.dj-close-menu');
+            const searchToggle = document.querySelector('.dj-search-toggle');
+            const searchInputContainer = document.querySelector('.dj-search-input-container');
+            const closeSearch = document.querySelector('.dj-close-search');
+            const menuItems = document.querySelectorAll('.dj-menu-item');
+            const navbarIcons = document.querySelector('.dj-navbar-icons'); // ✅ new
+
+            const toggleMenu = () => {
+                menuToggle.classList.toggle('active');
+                sideMenu.classList.toggle('open');
+                menuOverlay.classList.toggle('open');
+                diamondIcon.style.display = menuToggle.classList.contains('active') ? 'none' : 'block';
+
+                if (menuToggle.classList.contains('active')) {
+                    menuItems.forEach((item, index) => {
+                        item.style.setProperty('--delay', `${index * 0.5}s`);
+                    });
+                    navbarIcons.classList.add('disable-interaction'); // ✅ disable icons
+                } else {
+                    navbarIcons.classList.remove('disable-interaction'); // ✅ enable icons
+                }
+            };
+
+            const closeAllMenus = () => {
+                menuToggle.classList.remove('active');
+                sideMenu.classList.remove('open');
+                menuOverlay.classList.remove('open');
+                navbarIcons.classList.remove('disable-interaction'); // ✅ enable icons
+                setTimeout(() => {
+                    diamondIcon.style.display = 'block';
+                }, 200);
+            };
+
+            const toggleSearch = () => {
+                searchInputContainer.classList.toggle('active');
+            };
+
+            menuToggle.addEventListener('click', toggleMenu);
+            closeMenu.addEventListener('click', closeAllMenus);
+            menuOverlay.addEventListener('click', closeAllMenus);
+            searchToggle.addEventListener('click', toggleSearch);
+            closeSearch.addEventListener('click', toggleSearch);
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && sideMenu.classList.contains('open')) {
+                    closeAllMenus();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

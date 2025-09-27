@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lookup Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="asset/style.css">
+</head>
+
+<body>
+    <div class="dj-navbar">
+        <div class="dj-navbar-container">
+            <button class="dj-menu-toggle" aria-label="Toggle menu">
+                <img src="asset/images/diamond-luxury-stone-isolated-icon-free-vector.jpg" alt="Menu Icon"
+                    class="dj-diamond-icon" />
+            </button>
+
+            <div class="dj-logo-container">
+                <a href="index.html" class="dj-logo">
+                    <span class="dj-logo-text">DIAMOND</span>
+                    <span class="dj-logo-accent">✦</span>
+                    <span class="dj-logo-text">JEWELRY</span>
+                </a>
+            </div>
+
+            <!-- ✅ Wrapped both icons in one container -->
+            <div class="dj-navbar-icons">
+                <div class="dj-account-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+
+                <div class="dj-search-container">
+                    <button class="dj-search-toggle" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <div class="dj-search-input-container">
+                        <input type="text" class="dj-search-input" placeholder="Search..." />
+                        <button class="dj-close-search" aria-label="Close search">✕</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dj-side-menu">
+            <div class="dj-menu-header">
+                <h1>Diamond</h1>
+                <button class="dj-close-menu" aria-label="Close menu">✕</button>
+            </div>
+            <nav class="dj-menu-nav">
+                <ul>
+                    <li><a href="In -Bookappoinment.html" class="dj-menu-item">BOOK AN APPOINTMENT</a></li>
+                    <li><a href="Book An Appointment.html" class="dj-menu-item">BESPOKE</a></li>
+
+                    <li><a href="Lookup - Page.html" class="dj-menu-item">LOOKBOOK</a></li>
+                    <li><a href="Inquery Page.html" class="dj-menu-item">inquiry Page</a></li>
+                    <li><a href="#" class="dj-menu-item">LOGIN</a></li>
+                </ul>
+            </nav>
+            <div class="dj-menu-footer">
+                <a href="https://www.instagram.com" target="_blank" class="dj-instagram-icon" aria-label="Instagram">
+                    <img src="asset/images/instagram.png" alt="" />
+                </a>
+            </div>
+        </div>
+
+        <div class="dj-menu-overlay"></div>
+    </div><!-- Inside <script> -->
+
+    <!-- Heading Page -->
+
+    <div class="section-pair">
+        <div class="img-wrap">
+            <img class="img-main"
+                src="asset/images/Curve_Diamond_Creole_ONMODEL_3_5000x_a369dc07-3210-4910-8629-fb0d50af02e5_5000x.jpg"
+                alt="">
+            <div class="text-overlay">
+                <h2>Thursday/Saturday 12-5pm <br> Pelikanplatz 15 ZH (Xania)</h2>
+                <button class="btn-ghost">Contact us on Instagram</button>
+            </div>
+        </div>
+        <img class="img-side" src="asset/images/Diamonds_5000x.jpg" alt="">
+    </div>
+
+    <div class="section-pair-alt">
+        <div class="img-wrap">
+            <img class="img-main-alt" src="asset/images/IMG_0364_2_5000x.jpg" alt="">
+            <div class="text-overlay">
+                <h2>Switzerland's pioneering <br> sustainable diamond <br> jewelry brand</h2>
+                <button class="btn-ghost">Book an appointment</button>
+            </div>
+        </div>
+        <img class="img-side-alt" src="asset/images/DiamondStud_5000x.jpg" alt="">
+    </div>
+
+
+    <!-- Product page -->
+
+    <main>
+
+        <div class="j-title">
+            <h1>Discover our newest LOEV Tennis styles</h1>
+        </div>
+
+        <div class="j-filter-box">
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+            </select>
+            <svg class="j-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </div>
+
+        <div class="j-grid">
+            <!-- Column 1 -->
+            <div class="j-col">
+                <div class="j-card" data-material="gold"
+                    onclick="window.location='Book.html?img='+encodeURIComponent('grid/000-2025-3.jpg')">
+                    <img class="j-img" src="asset/images/grid/000-2025-3.jpg" alt="">
+                    <div class="j-hover">
+                        <h3>GOLD RING</h3>
+                    </div>
+                </div>
+                <div class="j-card" data-material="gold"
+                    onclick="window.location='Book.html?img='+encodeURIComponent('grid/00x01.jpg')">
+                    <img class="j-img" src="asset/images/grid/00x01.jpg" alt="">
+                    <div class="j-hover">
+                        <h3>GOLD BRACELET</h3>
+                    </div>
+                </div>
+                <div class="j-card" data-material="silver"
+                    onclick="window.location='Book.html?img='+encodeURIComponent('grid/00x01.jpg')">
+                    <img class="j-img" src="asset/images/grid/010grid.jpg" alt="">
+                    <div class="j-hover">
+                        <h3>SILVER BRACELET</h3>
+                    </div>
+                </div>
+                <div class="j-card" data-material="gold"
+                    onclick="window.location='Book.html?img='+encodeURIComponent('grid/00x01.jpg')">
+                    <img class="j-img" src="asset/images/grid/10929.jpg" alt="">
+                    <div class="j-hover">
+                        <h3>GOLD RING</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="j-col">
+                <div class="j-card" data-material="silver">
+                    <img class="j-img" src="asset/images/grid/112.jpg" alt="">
+                    <div class="j-hover">
+                        <h3>SILVER RING</h3>
+                    </div>
+                </div>
+                <div class="j-card" data-material="gold">
+                    <img class="j-img" src="asset/images/grid/10929.jpg" alt="">
+                    <div class="j-hover">
+                        <h3>GOLD RING</h3>
+                    </div>
+                </div>
+                <div class="j-card" data-material="silver">
+                    <img class="j-img" src="asset/images/grid/10929.jpg" alt="">
+                    <div class="j-hover">
+                        <h3>SILVER EARRINGS</h3>
+                    </div>
+                </div>
+                <div class="j-card" data-material="gold">
+                    <img class="j-img" src="asset/images/grid/Allora-Earring.jpg" alt="">
+                    <div class="j-hover">
+                        <h3>GOLD EARRINGS</h3>
+                    </div>
+                </div>
+                <div class="j-card" data-material="silver">
+                    <img class="j-img" src="asset/images/grid/bojagi-gift-wrap.jpg" alt="">
+                    <div class="j-hover">
+                        <h3>SILVER NECKLACE</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="j-col">
+                <div class="j-card" data-material="gold">
+                    <img class="j-img" src="asset/images/grid/Bracelets.jpg" alt="">
+                    <div class="j-hover">
+                        <h3>GOLD RING</h3>
+                    </div>
+                </div>
+                <div class="j-card" data-material="silver">
+                    <img class="j-img" src="asset/images/grid/BRILLIANT-DIAMOND-TRACE-HOOPS.jpg" alt="">
+                    <div class="j-hover">
+                        <h3>SILVER BRACELET</h3>
+                    </div>
+                </div>
+                <div class="j-card" data-material="gold">
+                    <img class="j-img" src="asset/images/grid/Brilliant-Diamond-Trace-Necklace.jpg" alt="">
+                    <div class="j-hover">
+                        <h3>GOLD BRACELET</h3>
+                    </div>
+                </div>
+                <div class="j-card" data-material="silver">
+                    <img class="j-img" src="asset/images/grid/cresygi.jpg" alt="">
+                    <div class="j-hover">
+                        <h3>SILVER RING</h3>
+                    </div>
+                </div>
+                <div class="j-card" data-material="silver">
+                    <img class="j-img" src="asset/images/grid/Grande-Anerise-Ring.jpg" alt="">
+                    <div class="j-hover">
+                        <h3>SILVER RING</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="j-col">
+                <div class="j-card" data-material="gold">
+                    <img class="j-img" src="asset/images/grid/Diamond-Bloom-Ring.jpg" alt="">
+                    <div class="j-hover">
+                        <h3>GOLD RING</h3>
+                    </div>
+                </div>
+                <div class="j-card" data-material="silver">
+                    <img class="j-img" src="asset/images/grid/DIAMOND-OASIS-RING.jpg" alt="">
+                    <div class="j-hover">
+                        <h3>SILVER EARRINGS</h3>
+                    </div>
+                </div>
+                <div class="j-card" data-material="gold">
+                    <img class="j-img" src="asset/images/grid/Diamond-Serif-Bracelet-and-Necklace.jpg" alt="">
+                    <div class="j-hover">
+                        <h3>GOLD EARRINGS</h3>
+                    </div>
+                </div>
+                <div class="j-card" data-material="silver">
+                    <img class="j-img" src="asset/images/grid/KATKIM-LOOKBOOK-2025-3.jpg" alt="">
+                    <div class="j-hover">
+                        <h3>SILVER NECKLACE</h3>
+                    </div>
+                </div>
+                <div class="j-card" data-material="gold">
+                    <img class="j-img" src="asset/images/grid/Bracelets.jpg" alt="">
+                    <div class="j-hover">
+                        <h3>GOLD RING</h3>
+                    </div>
+                </div>
+                <div class="j-card" data-material="gold">
+                    <img class="j-img" src="asset/images/grid/112.jpg" alt="">
+                    <div class="j-hover">
+                        <h3>GOLD EARRINGS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Read More section -->
+
+    <section class="fleft">
+        <h2>About Our Craft</h2>
+        <div class="text-content" id="textBlock">
+            <p>
+                At our atelier, every piece of jewelry is handcrafted with care, precision, and love.
+                From sketching designs to selecting ethically sourced gemstones, we uphold traditions of craftsmanship
+                that span generations.
+                Our artisans blend classic techniques with modern touches to create pieces that are timeless yet unique.
+                Whether it’s a simple gold ring or an elaborate diamond necklace, every detail is meticulously
+                considered.
+                We believe jewelry should tell a story—your story—and be as enduring as your most cherished memories.
+                That's why we create with passion, pride, and purpose.
+                Experience the touch of elegance in every cut, curve, and sparkle.
+                Visit our collection to find something truly meaningful.
+                Celebrate beauty, grace, and authenticity.
+                Discover the art of fine jewelry—crafted just for you.
+            </p>
+            <span class="read-more" onclick="toggleReadMore()">Read more</span>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>ABOUT OUR STORE</h3>
+                <p>Our mission is to help success-driven individuals bookmark chapters of achievement whilst expressing
+                    themselves through custom jewelry</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>MAIN MENU</h3>
+                <ul class="footer-links">
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Jewelry care</a></li>
+                    <li><a href="Private Policy.html">Private Policy</a></li>
+                    <li><a href="TAC.html">Terms</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="footer-section">
+                <h3>STAY UP TO DATE WITH OUR DROPS</h3>
+                <p>Be the first to know! Sign up for exclusive access to our limited-edition drops. Don't miss your
+                    chance to secure one-of-a-kind pieces before anyone else!</p>
+                <div class="email-signup">
+                    <input type="email" style="padding-left: 20px;" placeholder="Enter your email">
+                    <button class="ftb" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © Designed and developed by Sneh Gohil
+        </div>
+    </footer>
+
+    <script>
+        const container = document.querySelector('.j-grid');
+        const filter = document.getElementById('filter');
+
+        const allPosts = [...document.querySelectorAll('.j-card')].map(post => ({
+            element: post.cloneNode(true),
+            material: post.dataset.material
+        }));
+
+        const buildGrid = (posts) => {
+            container.innerHTML = '';
+            const columns = [[], [], [], []];
+            posts.forEach((post, index) => {
+                columns[index % 4].push(post);
+            });
+
+            columns.forEach(colPosts => {
+                const column = document.createElement('div');
+                column.classList.add('j-col');
+                colPosts.forEach(post => column.appendChild(post.element.cloneNode(true)));
+                container.appendChild(column);
+            });
+        };
+
+        buildGrid(allPosts);
+
+        filter.addEventListener('change', (e) => {
+            const value = e.target.value;
+            const filteredPosts = value === 'all'
+                ? allPosts
+                : allPosts.filter(post => post.material === value);
+            buildGrid(filteredPosts);
+        });
+    </script>
+
+    <script>
+        function toggleReadMore() {
+            const textBlock = document.getElementById('textBlock');
+            textBlock.classList.toggle('expanded');
+
+            const btn = textBlock.querySelector('.read-more');
+            if (textBlock.classList.contains('expanded')) {
+                btn.textContent = "Read less";
+            } else {
+                btn.textContent = "Read more";
+            }
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.dj-menu-toggle');
+            const diamondIcon = document.querySelector('.dj-diamond-icon');
+            const sideMenu = document.querySelector('.dj-side-menu');
+            const menuOverlay = document.querySelector('.dj-menu-overlay');
+            const closeMenu = document.querySelector('.dj-close-menu');
+            const searchToggle = document.querySelector('.dj-search-toggle');
+            const searchInputContainer = document.querySelector('.dj-search-input-container');
+            const closeSearch = document.querySelector('.dj-close-search');
+            const menuItems = document.querySelectorAll('.dj-menu-item');
+            const navbarIcons = document.querySelector('.dj-navbar-icons'); // ✅ new
+
+            const toggleMenu = () => {
+                menuToggle.classList.toggle('active');
+                sideMenu.classList.toggle('open');
+                menuOverlay.classList.toggle('open');
+                diamondIcon.style.display = menuToggle.classList.contains('active') ? 'none' : 'block';
+
+                if (menuToggle.classList.contains('active')) {
+                    menuItems.forEach((item, index) => {
+                        item.style.setProperty('--delay', `${index * 0.5}s`);
+                    });
+                    navbarIcons.classList.add('disable-interaction'); // ✅ disable icons
+                } else {
+                    navbarIcons.classList.remove('disable-interaction'); // ✅ enable icons
+                }
+            };
+
+            const closeAllMenus = () => {
+                menuToggle.classList.remove('active');
+                sideMenu.classList.remove('open');
+                menuOverlay.classList.remove('open');
+                navbarIcons.classList.remove('disable-interaction'); // ✅ enable icons
+                setTimeout(() => {
+                    diamondIcon.style.display = 'block';
+                }, 200);
+            };
+
+            const toggleSearch = () => {
+                searchInputContainer.classList.toggle('active');
+            };
+
+            menuToggle.addEventListener('click', toggleMenu);
+            closeMenu.addEventListener('click', closeAllMenus);
+            menuOverlay.addEventListener('click', closeAllMenus);
+            searchToggle.addEventListener('click', toggleSearch);
+            closeSearch.addEventListener('click', toggleSearch);
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && sideMenu.classList.contains('open')) {
+                    closeAllMenus();
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
