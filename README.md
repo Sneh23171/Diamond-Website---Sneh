@@ -16,7 +16,7 @@ Visitors can browse diamond products, make inquiries, and schedule appointments.
 
 ## 🚀 Live Demo
 
-👉 **[View the Site on Netlify](https://your-netlify-link.netlify.app/)**  
+👉 [**[View the Site on Netlify](https://your-netlify-link.netlify.app/)** ](https://diamond-web-sneh.netlify.app/) 
 
 *(Replace the URL above with your actual Netlify link.)*
 
